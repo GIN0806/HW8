@@ -61,9 +61,10 @@
 <figure class="highcharts-figure">
   <div id="container"></div>
   <p class="highcharts-description">
-    Basic line chart showing trends in a dataset. This chart includes the
-    <code>series-label</code> module, which adds a label to each line for
-    enhanced readability.
+    從該圖可得知法國與台灣的入境觀光客人數比率狀態   
+<br>
+
+    觀三A 410909721 王芝竟
   </p>
 </figure>
 	
@@ -72,7 +73,7 @@
 	Highcharts.chart('container', {
 
   title: {
-    text: 'U.S Solar Employment Growth by Job Category, 2010-2020'
+    text: '法國與台灣的入境觀光客人數, 2010-2021'
   },
 
   subtitle: {
@@ -87,7 +88,7 @@
 
   xAxis: {
     accessibility: {
-      rangeDescription: 'Range: 2010 to 2020'
+      rangeDescription: 'Range: 2010 to 2021'
     }
   },
 
@@ -106,27 +107,18 @@
     }
   },
 
-  series: [{
-    name: 'Installation & Developers',
-    data: [43934, 48656, 65165, 81827, 112143, 142383,
-      171533, 165174, 155157, 161454, 154610]
+  series:
+   [
+   {
+    name: '台灣',
+    data: [5.6, 6.1, 7.3, 8.0, 9.9, 10.4,
+      10.7, 10.7, 11.1, 11.9, 1.4,0.1]
   }, {
-    name: 'Manufacturing',
-    data: [24916, 37941, 29742, 29851, 32490, 30282,
-      38121, 36885, 33726, 34243, 31050]
-  }, {
-    name: 'Sales & Distribution',
-    data: [11744, 30000, 16005, 19771, 20185, 24377,
-      32147, 30912, 29243, 29213, 25663]
-  }, {
-    name: 'Operations & Maintenance',
-    data: [null, null, null, null, null, null, null,
-      null, 11164, 11218, 10077]
-  }, {
-    name: 'Other',
-    data: [21908, 5548, 8105, 11248, 8989, 11816, 18274,
-      17300, 13053, 11906, 10073]
-  }],
+    name: '法國',
+    data: [77.6, 80.5, 82, 83.6, 83.7, 84.5,
+      82.7, 86.9, 89.4, 90.9, 41.7,48.4]
+  }
+  ],
 
   responsive: {
     rules: [{
